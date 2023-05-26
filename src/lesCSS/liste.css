@@ -1,0 +1,89 @@
+/* Custom styles for plant item */
+.background{
+	
+}
+
+.plant-item {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-border-radius: 5px;
+}
+
+.plant-item:hover {
+    -fx-background-color: #f5f5f5;
+    -fx-cursor: hand;
+}
+
+/* Custom styles for plant name */
+.plant-name {
+    -fx-fill: #333333;
+    -fx-text-alignment: center;
+}
+
+/* Custom styles for favorite toggle button */
+.favorite-toggle-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/image/1.jpg");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+}
+
+.favorite-toggle-button:selected {
+    -fx-background-image: url("/image/2.jpg");
+}
+
+/* Custom styles for content pane */
+.content-pane {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Custom styles for info pane */
+.info-pane {
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}
+
+/* Custom styles for plant image */
+.plant-image {
+    /* Custom styles for plant image */
+}
+
+/* Custom styles for navigation buttons */
+.navigation-button {
+    /* Custom styles for navigation buttons */
+}
+
+/* Custom styles for favorite button */
+.favorite-button {
+    /* Custom styles for favorite button */
+}
+
+/* Custom styles for plant name */
+.plant-name {
+    -fx-fill: #333333;
+    -fx-text-alignment: center;
+}
+
+/* Custom styles for description pane */
+.description-pane {
+    /* Custom styles for description pane */
+}
+
+/* Custom styles for info label */
+.info-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #555555;
+}
+
+/* Custom styles for app title */
+.app-title {
+    -fx-text-fill: white;
+    -fx-font-family: "Calisto MT";
+    -fx-font-size: 31.0;
+}

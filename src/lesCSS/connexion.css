@@ -1,0 +1,42 @@
+/* CSS pour l'interface FXML */
+.background {
+    -fx-background-color: #ffffff; /* Couleur de fond */
+}
+
+.title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-padding: 30px;
+    -fx-text-fill: #006600; /* Couleur du texte */
+    
+   
+}
+
+.content {
+    -fx-alignment: center; /* Alignement au centre */
+    
+}
+
+.image {
+    -fx-alignment: center; /* Alignement au centre */
+}
+
+.label {
+    -fx-font-size: 38px;
+}
+
+.text-field {
+    -fx-prompt-text-fill: #888888; /* Couleur du texte de l'indicateur */
+    -fx-pref-width: 300px;
+}
+
+.password-field {
+    -fx-prompt-text-fill: #888888; /* Couleur du texte de l'indicateur */
+}
+
+.button {
+    -fx-font-size: 15px;
+    -fx-background-color: #006600; /* Couleur du fond */
+    -fx-text-fill: #ffffff; /* Couleur du texte */
+    -fx-padding: 10px 20px; /* Marge intérieure */
+}

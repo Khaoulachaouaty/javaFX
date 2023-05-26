@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="background" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PlanteController">
+        <top>
+        <HBox prefHeight="108.0" prefWidth="1200.0" style="-fx-background-color: #1f4d33; -fx-padding: 10px;">
+            <children>
+                <Label prefHeight="47.0" prefWidth="193.0" styleClass="app-title" text="PhytoLogica" textFill="#fffefe">
+                    <font>
+                        <Font name="Calisto MT" size="31.0" />
+                    </font>
+                </Label>
+            <Button fx:id="acceuil" mnemonicParsing="false" onAction="#acceuil" style="-fx-background-color: transparent;" text="Acceuil" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="recherche" mnemonicParsing="false" onAction="#recherche" style="-fx-background-color: transparent;" text="Recherche" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#conseil" style="-fx-background-color: transparent;" text="Conseil" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            </children>
+        </HBox>
+    </top>
+   <center>
+        <AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #f5f5f5;" styleClass="content-pane" BorderPane.alignment="CENTER">
+            <AnchorPane layoutX="138.0" layoutY="80.0" prefHeight="400.0" prefWidth="655.0" style="-fx-border-color: #e0e0e0; -fx-border-width: 1px;" styleClass="info-pane">
+                <Label layoutX="10.0" layoutY="10.0" style="-fx-font-size: 18px; -fx-text-fill: #555555;" styleClass="info-label" text="Caractéristiques :">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+                <GridPane layoutX="3.0" layoutY="47.0" prefHeight="352.0" prefWidth="650.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="283.0" minWidth="10.0" prefWidth="236.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="608.0" minWidth="10.0" prefWidth="414.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-text-fill: #555555;" text="- Catégorie: " textFill="#3b7252" />
+                        <Label style="-fx-font-size: 16px; -fx-text-fill: #555555;" text="- Saison: " textFill="#39c372" GridPane.rowIndex="1" />
+                        <Label style="-fx-font-size: 16px; -fx-text-fill: #555555;" text="- Période d'arrosage: " textFill="#256540" GridPane.rowIndex="2" />
+                  <Label prefHeight="25.0" prefWidth="204.0" style="-fx-font-size: 16px; -fx-text-fill: #555555;" text="- Qunatité d'eau néssecaire:" textFill="#3b7252" GridPane.rowIndex="3" />
+                  <Label style="-fx-font-size: 16px; -fx-text-fill: #555555;" text="- Les sels minéraux:" textFill="#3b7252" GridPane.rowIndex="4" />
+                  <Label style="-fx-font-size: 16px; -fx-text-fill: #555555;" text="- Les virus:" textFill="#3b7252" GridPane.rowIndex="5" />
+                  <Label style="-fx-font-size: 16px; -fx-text-fill: #555555;" text="- Periode de florison:" textFill="#3b7252" GridPane.rowIndex="6" />
+                  <Text fx:id="florison" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="405.3603515625" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="virus" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="406.3603515625" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="sels" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="411.3603515625" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="qte_eau" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="409.3603515625" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="cat" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="410.3603515625" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="saison" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="405.3603515625" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="arrosage" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="410.3603515625" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                    </children>
+                </GridPane>
+            </AnchorPane>
+            <ImageView fx:id="image" fitHeight="500.0" fitWidth="457.0" layoutX="868.0" layoutY="73.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" styleClass="plant-image">
+            <viewport>
+               <Rectangle2D />
+            </viewport></ImageView>
+         <Button layoutX="1206.0" layoutY="589.0" mnemonicParsing="false" onAction="#afficherPlanteSuivante" styleClass="navigation-button" text="Suivant" />
+         <Button layoutX="1148.0" layoutY="589.0" mnemonicParsing="false" onAction="#retourPlantePrecedente" styleClass="navigation-button" text="Retour" />
+<ToggleButton fx:id="fav" layoutX="864.0" layoutY="571.0" mnemonicParsing="false" styleClass="favorite-toggle-button" />
+         <Text fx:id="nom" fill="#2f572e" layoutX="831.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plant-name" text="Nom de la plante" textAlignment="CENTER" underline="true" wrappingWidth="472.3603515625">
+            <font>
+               <Font name="Courier New Italic" size="40.0" />
+            </font>
+         </Text>
+         <AnchorPane layoutX="69.0" layoutY="485.0" prefHeight="167.0" prefWidth="763.0" styleClass="description-pane">
+            <children>
+               <Label layoutX="16.0" layoutY="21.0" style="-fx-font-size: 16px; -fx-text-fill: #555555;" text="- Description:" textFill="#3b7252" />
+               <Text fx:id="descrp" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="758.3603515625">
+                  <font>
+                     <Font size="17.0" />
+                  </font>
+               </Text>
+            </children>
+         </AnchorPane>
+        </AnchorPane>
+   </center>
+</BorderPane>

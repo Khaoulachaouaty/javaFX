@@ -1,0 +1,36 @@
+.background {
+    -fx-background-image: url('file:///C:/Users/hp/OneDrive/Bureau/image/a.jpg');
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.content {
+    -fx-effect: blur(10px); /* Applique un flou de 10 pixels */
+}
+
+.user, .password, .mail, .phone {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-text-fill: black;
+}
+
+.button {
+    -fx-background-color: #59BD78;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 8 15;
+}
+
+.button:hover {
+    -fx-background-color: #4FAE6E;
+}
+
+.button:pressed {
+    -fx-background-color: #438D5A;
+}
+

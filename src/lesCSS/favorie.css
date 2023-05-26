@@ -1,0 +1,9 @@
+.plant-container {
+    -fx-background-color: lightgray;
+    -fx-padding: 10px;
+}
+
+.plant-container .hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
